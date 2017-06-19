@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 
-namespace g8
+namespace g8.Views
 {
-    public partial class LoginPage : ContentPage
+    public partial class Login : ContentPage
     {
-        public LoginPage()
+        public Login()
         {
             InitializeComponent();
         }
