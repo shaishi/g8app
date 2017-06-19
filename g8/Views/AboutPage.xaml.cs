@@ -10,6 +10,7 @@ namespace g8
         public AboutPage()
         {
             InitializeComponent();
+
         }
     }
 }

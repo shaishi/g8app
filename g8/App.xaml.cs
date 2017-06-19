@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+﻿﻿using System.Collections.Generic;
 using g8.Views;
 using Xamarin.Forms;
 
@@ -19,15 +19,16 @@ namespace g8
                 DependencyService.Register<MockDataStore>();
             else
                 DependencyService.Register<CloudDataStore>();
-
+            Settings.UserId = "";
             SetMainPage();
         }
 
         public static void SetMainPage()
         {
-            if (!UseMockDataStore && !Settings.IsLoggedIn)
+            
+            if (!Settings.IsLoggedIn)
             {
-                Current.MainPage = new NavigationPage(new LoginPage())
+                Current.MainPage = new NavigationPage(new Login())
                 {
                     BarBackgroundColor = (Color)Current.Resources["Primary"],
                     BarTextColor = Color.White
