@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-
+using g8.Views;
 using Xamarin.Forms;
 
 namespace g8
@@ -44,17 +44,20 @@ namespace g8
             Current.MainPage = new TabbedPage
             {
                 Children = {
-                    new NavigationPage(new ItemsPage())
+                    new NavigationPage(new Home())
                     {
-                        Title = "Browse",
-                        Icon = Device.OnPlatform("tab_feed.png", null, null)
+                        Title = "Home",
+                        Icon = "tab_feed.png"
                     },
+
                     new NavigationPage(new AboutPage())
                     {
                         Title = "About",
-                        Icon = Device.OnPlatform("tab_about.png", null, null)
+                        Icon = "tab_about.png"
                     },
+
                 }
+
             };
         }
     }
