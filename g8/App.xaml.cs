@@ -47,13 +47,13 @@ namespace g8
                 Children = {
                     new NavigationPage(new Home())
                     {
-                        Title = "Home",
+                        Title = "בית",
                         Icon = "tab_feed.png"
                     },
 
                     new NavigationPage(new AboutPage())
                     {
-                        Title = "About",
+                        Title = "קצת עלינו",
                         Icon = "tab_about.png"
                     },
 

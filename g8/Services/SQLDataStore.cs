@@ -14,9 +14,9 @@ namespace g8.Services
 
         public List<Ride> GetRides()
         {
-            Ride ride1 = new Ride { Hour = "17:54", Room = 3, Destination = "Rishon LeZion" };
-            Ride ride2 = new Ride { Hour = "18:10", Room = 2, Destination = "Raanana" };
-            Ride ride3 = new Ride { Hour = "18:15", Room = 4, Destination = "Natanya" };
+            Ride ride1 = new Ride { Hour = "17:54", Room = 3, Destination = "ראשון לציון" };
+            Ride ride2 = new Ride { Hour = "18:10", Room = 2, Destination = "רעננה" };
+            Ride ride3 = new Ride { Hour = "18:15", Room = 4, Destination = "נתניה" };
             return new List<Ride> { ride1, ride2, ride3 };
 
         }

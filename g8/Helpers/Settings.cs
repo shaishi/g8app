@@ -1,4 +1,5 @@
-﻿using Plugin.Settings;
+﻿using g8.Models;
+using Plugin.Settings;
 using Plugin.Settings.Abstractions;
 
 namespace g8
@@ -15,6 +16,18 @@ namespace g8
             get
             {
                 return CrossSettings.Current;
+            }
+        }
+        static Ride addedRow = null;
+        public static Ride AddedRow
+        {
+            get
+            {
+                return addedRow;
+            }
+            set
+            {
+                addedRow = value;
             }
         }
 

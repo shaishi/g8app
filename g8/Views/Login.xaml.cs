@@ -8,8 +8,13 @@ namespace g8.Views
 {
     public partial class Login : ContentPage
     {
-        public Login()
+        public void Shailogo()
         {
+            
+        }
+		public Login()
+
+		{
             InitializeComponent();
             //GetLocation();
         }
@@ -35,6 +40,7 @@ namespace g8.Views
             Settings.UserId = "ShohamHaMeleh";
             App.GoToMainPage();
         }
+		
 
 
     }
