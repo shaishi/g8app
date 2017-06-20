@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="g8.Views.Home" Title="Home">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="g8.Views.Home" Title="בית">
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
@@ -14,16 +14,16 @@
                 <StackLayout.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnDriverNav" />
                 </StackLayout.GestureRecognizers>
-                <Label HorizontalOptions="Center" VerticalOptions="EndAndExpand" Grid.Row="0" Grid.Column="0" Text="Driver" LineBreakMode="NoWrap" FontSize="16" />
-                <Label HorizontalOptions="Center" VerticalOptions="StartAndExpand" Grid.Row="0" Grid.Column="0" Text="Give a Ride" LineBreakMode="NoWrap" FontSize="13" />
+                <Label HorizontalOptions="Center" VerticalOptions="EndAndExpand" Grid.Row="0" Grid.Column="0" Text="בעל רכב" LineBreakMode="NoWrap" FontSize="16" />
+                <Label HorizontalOptions="Center" VerticalOptions="StartAndExpand" Grid.Row="0" Grid.Column="0" Text="מתי אתה יוצא?" LineBreakMode="NoWrap" FontSize="13" />
             </StackLayout>
             <StackLayout Padding="1" Grid.Row="1" Grid.Column="0" BackgroundColor="#DDD" />
             <StackLayout Padding="10" Grid.Row="2" Grid.Column="0" VerticalOptions="FillAndExpand" BackgroundColor="White">
                 <StackLayout.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnHitchNav" />
                 </StackLayout.GestureRecognizers>
-                <Label HorizontalOptions="Center" VerticalOptions="EndAndExpand" Grid.Row="2" Grid.Column="0" Text="Hitchhiker" LineBreakMode="NoWrap" FontSize="16" />
-                <Label HorizontalOptions="Center" VerticalOptions="StartAndExpand" Grid.Row="2" Grid.Column="0" Text="Get a Ride!" LineBreakMode="NoWrap" FontSize="13" />
+                <Label HorizontalOptions="Center" VerticalOptions="EndAndExpand" Grid.Row="2" Grid.Column="0" Text="טרמפיסט" LineBreakMode="NoWrap" FontSize="16" />
+                <Label HorizontalOptions="Center" VerticalOptions="StartAndExpand" Grid.Row="2" Grid.Column="0" Text="תבחר את הדרך שלך" LineBreakMode="NoWrap" FontSize="13" />
             </StackLayout>
         </Grid>
     </ContentPage.Content>

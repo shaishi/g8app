@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="g8.Views.Login" Title="Login">
-	<ContentPage.Content>
-        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                <Entry Placeholder="Username" HorizontalTextAlignment="Center" ></Entry>
-                <Entry Placeholder="Password" IsPassword="true" HorizontalTextAlignment="Center" ></Entry>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="g8.Views.Login" Title="התחברות">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Silver" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+                <Image Source="new_logo.png" VerticalOptions="StartAndExpand" HeightRequest="120" Aspect="AspectFit" />
             </StackLayout>
-            <Button Text="Sign in" Clicked="SignIn"/>
-            <Button Text="Sign up" />
-            <!--<Label x:Name="MyLabel" HorizontalOptions="Center" Text="defaults" />-->
+            <StackLayout Orientation="Vertical" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand">
+                <Entry Placeholder="שם משתמש" HorizontalTextAlignment="Center">
+                </Entry>
+                <Entry Placeholder="סיסמא" IsPassword="true" HorizontalTextAlignment="Center">
+                </Entry>
+                <Button Text="התחברות" Clicked="SignIn" />
+                <Button Text="הרשמה" />
+                <!--<Label x:Name="MyLabel" HorizontalOptions="Center" Text="defaults" />-->
+            </StackLayout>
         </StackLayout>
-	</ContentPage.Content>
+    </ContentPage.Content>
 </ContentPage>

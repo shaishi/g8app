@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="g8.Views.DriverPage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="g8.Views.DriverPage" Title="הצע נסיעה">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                <Entry Placeholder="Driving To" HorizontalTextAlignment="Center"/>
-                <Entry Placeholder="When" HorizontalTextAlignment="Center"/>
-                <Entry Placeholder="Seats Available" HorizontalTextAlignment="Center"/>
+                <Entry x:Name="dest" Placeholder="לאן אתה נוסע" HorizontalTextAlignment="Center"/>
+                <Entry x:Name="when" Placeholder="מתי אתה נוסע" HorizontalTextAlignment="Center"/>
+                <Entry x:Name="room" Placeholder="מקומות פנויים" HorizontalTextAlignment="Center"/>
             </StackLayout>
-            <Button Text="Add a Ride!" Clicked="OnButtonClick"/>
+            <Button Text="הוסף נסיעה!" Clicked="OnButtonClick"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

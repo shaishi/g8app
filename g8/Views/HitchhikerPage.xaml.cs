@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using g8.Models;
@@ -22,8 +22,8 @@ namespace g8.Views
         public void GetBus()
         {
             var busRide = new Ride();
-            busRide.Destination = "University";
-            busRide.Hour = "8 Minutes";
+            busRide.Destination = "אוניברסיטה";
+            busRide.Hour = "8 דקות";
             busRide.Room = 38;
             rides.Add(busRide);
         }
@@ -46,9 +46,9 @@ namespace g8.Views
             var stl = sender as StackLayout;
             var ride = new Ride();
             Console.WriteLine(stl.Children.Count);
-            ride.Destination = ((Label)stl.Children[0]).Text;
+            ride.Destination = ((Label)stl.Children[2]).Text;
             ride.Hour = ((Label)stl.Children[1]).Text;
-            ride.Room = int.Parse(((Label)stl.Children[2]).Text.Substring(10));
+            ride.Room = int.Parse(((Label)stl.Children[0]).Text.Substring(15));
             for (int i = 0; i < rides.Count; i++)
             {
                 if (rides[i].Equals(ride))
@@ -67,6 +67,11 @@ namespace g8.Views
         public void UpdateList() 
         {
             mainGrid.Children.Clear();
+            if (Settings.AddedRow != null)
+            {
+                rides.Add(Settings.AddedRow);
+                Settings.AddedRow = null;
+            }
 			for (int i = 0; i < rides.Count; i++)
 			{
 				StackLayout stl = new StackLayout
@@ -87,9 +92,9 @@ namespace g8.Views
 				stl.GestureRecognizers.Add(tgr);
 				Grid.SetRow(stl, i);
 				Grid.SetColumnSpan(stl, 3);
-				Label lbl1 = new Label { Text = ride.Destination, FontSize = 18, WidthRequest = 120, VerticalTextAlignment = TextAlignment.Center };
-				Label lbl2 = new Label { Text = ride.Hour, FontSize = 18, WidthRequest = 120, VerticalTextAlignment = TextAlignment.Center };
-				Label lbl3 = new Label { Text = "Room Left:" + ride.Room, FontSize = 18, WidthRequest = 120, VerticalTextAlignment = TextAlignment.Center };
+                Label lbl3 = new Label { Text = ride.Destination, FontSize = 16, WidthRequest = 130, VerticalTextAlignment = TextAlignment.Center, HorizontalTextAlignment=TextAlignment.End };
+				Label lbl2 = new Label { Text = ride.Hour, FontSize = 16, WidthRequest = 100, VerticalTextAlignment = TextAlignment.Center, HorizontalTextAlignment = TextAlignment.End };
+				Label lbl1 = new Label { Text = "מקומות פנויים: " + ride.Room, FontSize = 16, WidthRequest = 130, VerticalTextAlignment = TextAlignment.Center, HorizontalTextAlignment = TextAlignment.End };
 				stl.Children.Add(lbl1);
 				stl.Children.Add(lbl2);
 				stl.Children.Add(lbl3);
