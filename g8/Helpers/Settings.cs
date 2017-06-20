@@ -31,6 +31,19 @@ namespace g8
             }
         }
 
+		static Ride defaultRide = null;
+        public static Ride DefaultRide
+		{
+			get
+			{
+                return defaultRide;
+			}
+			set
+			{
+                defaultRide = value;
+			}
+		}
+
         #region Setting Constants
         const string UserIdKey = "userid";
         static readonly string UserIdDefault = string.Empty;

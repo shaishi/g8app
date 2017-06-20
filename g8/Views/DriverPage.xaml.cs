@@ -1,4 +1,4 @@
-﻿﻿using System;
+﻿﻿﻿using System;
 using System.Collections.Generic;
 using g8.Models;
 using Xamarin.Forms;
@@ -7,9 +7,10 @@ namespace g8.Views
 {
     public partial class DriverPage : ContentPage
     {
-        public DriverPage()
+        public DriverPage(bool isRegister = false)
         {
             InitializeComponent();
+
         }
 
         public async void OnButtonClick(object sender, EventArgs e)
