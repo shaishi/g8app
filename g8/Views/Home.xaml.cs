@@ -19,7 +19,7 @@ namespace g8.Views
 
         async void OnHitchNav(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new AboutPage());
+            await Navigation.PushAsync(new HitchhikerPage());
         }
     }
 }

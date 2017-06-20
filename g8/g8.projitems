@@ -45,6 +45,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)Views\HitchhikerPage.xaml.cs">
       <DependentUpon>HitchhikerPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Ride.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\SQLDataStore.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\AboutPage.xaml" />
