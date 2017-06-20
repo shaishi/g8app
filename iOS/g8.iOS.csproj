@@ -158,7 +158,7 @@
     <Compile Include="Helpers\Settings.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Entitlements.plist" />
+    <None Include="Entitlements_try.plist" />
     <None Include="Info.plist" />
     <None Include="packages.config" />
   </ItemGroup>

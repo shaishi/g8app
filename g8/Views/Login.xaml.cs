@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
 using Plugin.Geolocator;
 
@@ -41,6 +41,11 @@ namespace g8.Views
             App.GoToMainPage();
         }
 		
+        public void SignUp(object sender, EventArgs e)
+        {
+            DriverPage driverPage = new DriverPage();
+           
+        }
 
 
     }

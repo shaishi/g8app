@@ -1,4 +1,4 @@
-﻿﻿using System;
+﻿﻿﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using g8.Models;
@@ -72,6 +72,7 @@ namespace g8.Views
                 rides.Add(Settings.AddedRow);
                 Settings.AddedRow = null;
             }
+            //if (Settings.DefaultRide)
 			for (int i = 0; i < rides.Count; i++)
 			{
 				StackLayout stl = new StackLayout
@@ -82,7 +83,7 @@ namespace g8.Views
 				};
                 if (i == lastSelectedRideIdx)
                 {
-                    stl.BackgroundColor = new Color(0, 116, 255); 
+                    stl.BackgroundColor = new Color(72, 152, 0);
                 }
 				var ride = rides[i];
 				TapGestureRecognizer tgr = new TapGestureRecognizer();

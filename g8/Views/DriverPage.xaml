@@ -7,7 +7,7 @@
                 <Entry x:Name="when" Placeholder="מתי אתה נוסע" HorizontalTextAlignment="Center"/>
                 <Entry x:Name="room" Placeholder="מקומות פנויים" HorizontalTextAlignment="Center"/>
             </StackLayout>
-            <Button Text="הוסף נסיעה!" Clicked="OnButtonClick"/>
+            <Button x:Name="addRideBtn" Text="הוסף נסיעה!" Clicked="OnButtonClick"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
