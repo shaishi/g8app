@@ -1,4 +1,4 @@
-﻿    ﻿using System;
+﻿﻿    ﻿using System;
 using System.Collections.Generic;
 
 using Xamarin.Forms;
@@ -14,7 +14,7 @@ namespace g8.Views
 
         async void OnDriverNav(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new AboutPage());
+            await Navigation.PushAsync(new DriverPage());
         }
 
         async void OnHitchNav(object sender, EventArgs e)
